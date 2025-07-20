@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Emoji Quest: Find the Feeling</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h1>Emoji Quest: Find the Feeling</h1>
+
+  <div class="game-container">
+    
+    <!-- Scene image -->
+    <div class="scene">
+      <img src="assets/images/sad-scene.png" alt="A crying child holding a broken toy" />
+    </div>
+
+    <!-- Emoji options -->
+    <div class="emoji-bank">
+      <div class="emoji" draggable="true" data-emotion="happy" title="Happy">
+        <img src="assets/emojis/happy.png" alt="Happy emoji" />
+      </div>
+      <div class="emoji" draggable="true" data-emotion="sad" title="Sad">
+        <img src="assets/emojis/sad.png" alt="Sad emoji" />
+      </div>
+      <div class="emoji" draggable="true" data-emotion="angry" title="Angry">
+        <img src="assets/emojis/angry.png" alt="Angry emoji" />
+      </div>
+      <div class="emoji" draggable="true" data-emotion="surprised" title="Surprised">
+        <img src="assets/emojis/surprised.png" alt="Surprised emoji" />
+      </div>
+      <div class="emoji" draggable="true" data-emotion="confused" title="Confused">
+  <img src="assets/emojis/confused.png" alt="Confused emoji" />
+</div>
+<div class="emoji" draggable="true" data-emotion="shy" title="Shy">
+  <img src="assets/emojis/shy.png" alt="Shy emoji" />
+</div>
+<div class="emoji" draggable="true" data-emotion="proud" title="Proud">
+  <img src="assets/emojis/proud.png" alt="Proud emoji" />
+</div>
+
+    </div>
+
+    <!-- Drop Zone -->
+    <div class="drop-zone" data-accept="sad">
+      <p>Drop the correct emoji here 👇</p>
+    </div>
+
+
+    <img id="ghost-hand" src="assets/images/hand-guide.gif" alt="Drag Guidance" class="hidden" />
+    <img id="hand-cursor" src="assets/hand.png" alt="Drag Hint Hand" class="hand-cursor hidden">
+
+    <!-- Feedback -->
+    <div id="feedback" class="hidden"></div>
+
+    <!-- Next Level Button -->
+    <button id="next-btn" class="hidden">Next Level ➡️</button>
+
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
