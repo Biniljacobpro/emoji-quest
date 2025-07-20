@@ -91,19 +91,6 @@ function confettiEffect() {
   }, 250);
 }
 
-function sadConfettiEffect() {
-  confetti({
-    particleCount: 20,
-    spread: 90,
-    startVelocity: 20,
-    gravity: 1.5,
-    scalar: 1.2,
-    origin: { y: 0.3 },
-    emojiSize: 60,
-    emojis: ['👎', '😞', '🙁', '😔'],
-    zIndex: 999
-  });
-}
 
 // Shuffle emojis
 function shuffleEmojis() {
